@@ -1,0 +1,92 @@
+body {
+  background: #222;
+}
+
+h2 {
+  color: #666;
+  font-family: monospace;
+  text-align: center;
+}
+
+.background {
+  table-layout: fixed;
+  border-spacing: 0;
+}
+
+.background td {
+  padding: 0;
+}
+
+.lava, .actor {
+  background: #e55;
+}
+
+.wall {
+  background: #444;
+  border: solid 3px #333;
+  box-sizing: content-box;
+}
+
+.actor {
+  position: absolute;
+}
+
+.coin {
+  background: #e2e838;
+  border-radius: 50%;
+}
+
+.player {
+  /*background: #335699; Color of block char */
+  background: url('../resources/char.png');
+  box-shadow: none;
+}
+
+.lost .player {
+  background: #a04040;
+}
+
+.won .player {
+  background-image: url('../resources/char.png');
+  background-color :#222;
+}
+
+.game {
+  position: relative;
+  overflow: hidden;
+}
+
+.end {
+	margin: 10%;
+}
+
+.taunt {
+  color: #666;
+  font-family: monospace;
+  text-align: center;
+}
+
+.win {
+  text-align: center;
+  font-size: 70px;
+  font-family: monospace;
+  color: #a04040;
+  position: relative;
+  animation: bounce 1s infinite;
+  -webkit-animation: bounce 1s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+	transform: translateY(0);
+    -webkit-transform: translateY(0);
+  }
+  40% {
+	transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+  }
+  60% {
+	transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+  }
+}
